@@ -1,1 +1,7 @@
 
+sudo docker run --name mysql \
+  -e MYSQL_ROOT_USER=root \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -e MYSQL_DATABASE=mydb \
+  -p 3306:3306 \
+  -d mysql:8.0
